@@ -7,6 +7,6 @@ for i in list(sys.argv[2].split(",")):
     try:
         assert i in o_data
     except AssertionError:
-        print("User not found!")
+        print("No record of \'%s\' not found!" % i)
     else:
         print("Name:", i, ", University:", o_data[i])
